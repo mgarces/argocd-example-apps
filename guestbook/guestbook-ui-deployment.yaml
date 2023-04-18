@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui
+  name: v75-bmw
 spec:
   replicas: 5
   revisionHistoryLimit: 3
