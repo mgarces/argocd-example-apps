@@ -3,15 +3,15 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  replicas: 3
+  replicas: 5
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: guestbook-ui
+      app: v75-bmw
   template:
     metadata:
       labels:
-        app: guestbook-ui
+        app: v75-bmw
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
