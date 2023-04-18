@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: v75-bmw
+  name: guestbook-ui
 spec:
   replicas: 5
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: v75-bmw
+      app: guestbook-ui
   template:
     metadata:
       labels:
-        app: v75-bmw
+        app: guestbook-ui
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
